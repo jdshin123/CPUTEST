@@ -1,0 +1,12 @@
+cpu utiliziation 
+battery efficient
+-----------------
+1) 35953 is the time   //throttles at 1.8ghz
+2) 38732 is the time
+
+Max perfromance
+1) 19958 is the time   //throttles at 3.38
+2) 19950 is the time
+
+
+*in millis
