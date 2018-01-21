@@ -1,0 +1,8 @@
+
+public class Multithread extends Thread{
+	
+public void Run() {
+	int []redArray = new int[100];
+	System.out.println("thread running");
+}
+}

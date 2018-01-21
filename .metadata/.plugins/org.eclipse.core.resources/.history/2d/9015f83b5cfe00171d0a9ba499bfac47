@@ -1,0 +1,15 @@
+
+public class Multithread extends Thread{
+	
+public void run() {
+	int []redArray = new int[10000];
+	for(int i= 0; i <redArray.length; i++) {
+		redArray[i] = i;
+		try{Thread.sleep(500);}catch(InterruptedException e){System.out.println(e);}  
+	    System.out.println(i);  
+		System.out.println(redArray[i] + "redArray1");
+	}
+	
+	System.out.println("thread running redArray");
+}
+}

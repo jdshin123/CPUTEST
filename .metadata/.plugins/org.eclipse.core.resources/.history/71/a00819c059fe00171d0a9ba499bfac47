@@ -1,0 +1,7 @@
+
+public class Multithread extends Thread{
+	
+public void Run() {
+	
+}
+}

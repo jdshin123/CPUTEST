@@ -1,0 +1,36 @@
+/*
+ * Redundant arrays to check cpu util
+ */
+public class Start {
+	static final int firstArray[] = new int[1000];
+	static final int secondArray[] = new int[10000];
+	public static void main(String[]args) {
+		Multithread t1 = new Multithreada();
+		
+		
+		createArrays();
+		printArrays();
+		
+	
+	}
+	/*
+	 * init of redundant array
+	 */
+	public static void createArrays() {
+		for(int i = 0; i<firstArray.length;i++) {
+			for(int j= 0; j<secondArray.length;j++) {
+				firstArray[i] = i;
+				secondArray[j] = j;
+			}
+		}
+	}
+	
+	public static void printArrays() {
+		for(int i = 0; i<firstArray.length;i++) {
+			for(int j= 0; j<secondArray.length;j++) {
+				System.out.println(firstArray[i]);
+				System.out.println(secondArray[j]);
+			}
+		}
+	}
+}

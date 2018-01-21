@@ -1,0 +1,24 @@
+
+public class MultithreadRunnable implements Runnable{
+	
+public void run() {
+	long startTime = System.currentTimeMillis();
+
+	int []redArray2 = new int[1000];
+	for(int i= 0; i <redArray2.length; i++) {
+		redArray2[i] = i;
+		System.out.println(redArray2[i] + "redArray2");
+		try{Thread.sleep(5);}catch(InterruptedException e){System.out.println(e);}  
+	    System.out.println(i);  
+	}
+	
+	System.out.println("runnable starting redArray2");
+	long endTime   = System.currentTimeMillis();
+	long totalTime = endTime - startTime;
+	System.out.println(totalTime + " is the time");
+	
+}
+
+
+
+}

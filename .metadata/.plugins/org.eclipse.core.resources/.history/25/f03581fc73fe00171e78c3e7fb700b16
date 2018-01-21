@@ -1,0 +1,47 @@
+/*
+ * Redundant arrays to check cpu util
+ */
+public class Start {
+	static long startTime = System.currentTimeMillis();
+	static final int firstArray[] = new int[1000];
+	static final int secondArray[] = new int[1000];
+	public static void main(String[]args) {
+		/*
+		 * create object for multithread class
+		 */
+		Multithread t1 = new Multithread();
+		MultithreadRunnable t2 = new MultithreadRunnable();
+		Thread t3 = new Thread(t2);
+		
+		
+		//t1.start();
+		//t3.start();
+		
+		//createArrays();
+		//printArrays();
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		System.out.println(totalTime);
+	
+	}
+	/*
+	 * init of redundant array
+	 */
+	public static void createArrays() {
+		for(int i = 0; i<firstArray.length;i++) {
+			for(int j= 0; j<secondArray.length;j++) {
+				firstArray[i] = i;
+				secondArray[j] = j;
+			}
+		}
+	}
+	
+	public static void printArrays() {
+		for(int i = 0; i<firstArray.length;i++) {
+			for(int j= 0; j<secondArray.length;j++) {
+				System.out.println(firstArray[i]);
+				System.out.println(secondArray[j]);
+			}
+		}
+	}
+}

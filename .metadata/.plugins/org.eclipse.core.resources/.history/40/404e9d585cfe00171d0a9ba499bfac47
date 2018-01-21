@@ -1,0 +1,16 @@
+
+public class MultithreadRunnable implements Runnable{
+	
+public void run() {
+	int []redArray2 = new int[10000];
+	for(int i= 0; i <redArray2.length; i++) {
+		redArray2[i] = i;
+		System.out.println(redArray2[i] + "redArray2");
+	}
+	
+	System.out.println("runnable starting redArray2");
+}
+
+
+
+}

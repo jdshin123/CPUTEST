@@ -1,0 +1,10 @@
+
+public class MultithreadRunnable implements Runnable{
+	
+public void Run() {
+	System.out.println("runnable starting");
+}
+
+@Override
+
+}
